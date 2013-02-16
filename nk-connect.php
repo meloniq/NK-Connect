@@ -49,7 +49,7 @@ if ( is_admin() ) {
 function nksc_load_scripts() {
 
 }
-add_action( 'wp_print_scripts', 'nksc_load_scripts' );
+add_action( 'wp_enqueue_scripts', 'nksc_load_scripts' );
 
 
 /**
@@ -68,7 +68,7 @@ function nksc_load_styles() {
 	wp_register_style( 'nksc_style', plugins_url( 'style.css', __FILE__ ) );
 	wp_enqueue_style( 'nksc_style' );
 }
-add_action( 'wp_print_styles', 'nksc_load_styles' );
+add_action( 'wp_enqueue_scripts', 'nksc_load_styles' );
 
 
 /**
